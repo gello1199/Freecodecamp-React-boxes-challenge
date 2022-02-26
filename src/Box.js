@@ -1,8 +1,13 @@
 import React from 'react';
 
 const Box = (props) => {
+
+    const styles = {
+        backgroundColor: props.on ? "#222222" : "none"
+    }
+
     return (
-        <div className="box" key={props.square.id}></div>
+        <div style={styles} className="box"></div>
     );
 }
 
